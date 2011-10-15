@@ -79,6 +79,10 @@
         For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
     <script src="js/libs/modernizr-2.0.6.min.js"></script>
 
+    <!-- Including typekit before, so as to try and prevent a flash of alt fonts. This might or might not work. -->
+    <script type="text/javascript" src="http://use.typekit.com/hcb5ekl.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
     <?php wp_head(); ?>
 </head>
 

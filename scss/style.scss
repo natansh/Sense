@@ -1,14 +1,3 @@
-/*
-Theme Name: Sense 
-Theme URI: www.ionsofimagination.com/sense
-Description: A Responsive Wordpress Theme based on the HTML5 Boilerplate.
-Author: Natansh Verma
-Author URI: www.ionsofimagination.com
-Version: 0.01a
-Tags: white, blue
-License: GNU General Public License v2.0
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
 
 /* Sense uses Sass(scss syntax) to generate the final CSS file. As the boilerplate
  * is already in CSS, and scss is a superset of CSS, I am not modifying the boilerplate
@@ -230,7 +219,7 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: 
    ========================================================================== */
-
+@import "custom";
 
 
 
