@@ -1,0 +1,44 @@
+1. For build script integration, check out
+
+a) A really good video tutorial - by Jay George.
+http://www.jaygeorge.co.uk/2-html5-build-script-wordpress-2/
+
+b) This wordpress related documentation on the Boilerplate website.
+http://html5boilerplate.com/docs/Build-script/#wordpress-integration
+
+
+2. Build script dependencies
+
+Note that to be able to run the build script, there might be a need 
+for installing certain resources, and these resources are platform
+dependent.
+
+They are mentioned here -
+http://html5boilerplate.com/docs/Build-script/#dependencies
+
+3. Procedure
+
+a) Take the build folder from the HTML5 Boilerplate directory,
+and add it to the Wordpress theme root folder.
+
+b) Modify the config/project.properties to use the correct folder
+for CSS and images.
+    i) Make the css folder point to root. Wordpress assumes
+    style.css resides in root. Note that Jay George suggests that
+    we modify the default.properties folder for this, but I believe
+    it can be done just by the following line.
+
+        dir.css = .     
+
+    ii) Make the images folder point to 'images'. The default is
+    imgs, but Wordpress makes an assumption for the folder where 
+    images are stored.
+
+        dir.images = images
+
+c) Checkpoint: The build script should currently work if you don't have
+any php files for now. If you do, then there is more work to be done.
+
+
+
+
