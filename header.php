@@ -42,7 +42,7 @@
 
     // Add a page number if necessary:
     if ( $paged >= 2 || $page >= 2 )
-        echo ' | ' . sprintf( __( 'Page %s', 'sense_nv' ), max( $paged, $page ) );
+        echo ' | ' . sprintf( __( 'Page %s', 'sense' ), max( $paged, $page ) );
 
     ?></title>
 
@@ -89,14 +89,16 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed">
     <header id="branding" role="banner">
-        <hgroup>
-            <h1 id="site-title"><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-            <h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-        </hgroup>
+        <div id = "site-title">
+            <h1><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+        </div>
+        <div id = "site-description">
+            <p><?php bloginfo( 'description' ); ?></p>
+        </div>
 
         <nav id="access" role="navigation">
-            <h1 class="assistive-text section-heading"><?php _e( 'Main menu', 'sense_nv' ); ?></h1>
-            <div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sense_nv' ); ?>"><?php _e( 'Skip to content', 'sense_nv' ); ?></a></div>
+            <h1 class="section-heading visuallyhidden"><?php _e( 'Main menu', 'sense' ); ?></h1>
+            <div class="visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sense' ); ?>"><?php _e( 'Skip to content', 'sense' ); ?></a></div>
 
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
         </nav><!-- #access -->
