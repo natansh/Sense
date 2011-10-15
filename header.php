@@ -64,7 +64,7 @@
 
     <!-- CSS: implied media=all -->
     <!-- CSS concatenated and minified via ant build script-->
-    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/style.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url') ?>/css/style.css">
     <!-- end CSS-->
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 
