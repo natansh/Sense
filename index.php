@@ -10,13 +10,12 @@
  */
 
 get_header(); ?>
-
         <div id="primary">
             <div id="content" role="main">
 
             <?php if ( have_posts() ) : ?>
-
-                <?php sense_content_nav( 'nav-above' ); ?>
+                <!-- I don't see any reason why I would want to have navigation above -->
+                <?php /* sense_content_nav( 'nav-above' ); */ ?>
 
                 <?php /* Start the Loop */ ?>
                 <?php while ( have_posts() ) : the_post(); ?>
@@ -29,6 +28,7 @@ get_header(); ?>
                         get_template_part( 'content', get_post_format() );
                     ?>
 
+                    <hr/>
                 <?php endwhile; ?>
 
                 <?php sense_content_nav( 'nav-below' ); ?>
@@ -37,7 +37,7 @@ get_header(); ?>
 
                 <article id="post-0" class="post no-results not-found">
                     <header class="entry-header">
-                        <h1 class="entry-title"><?php _e( 'Nothing Found', 'sense' ); ?></h1>
+                        <h2 class="entry-title"><?php _e( 'Nothing Found', 'sense' ); ?></h2>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">

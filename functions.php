@@ -103,8 +103,8 @@ function sense_widgets_init() {
         'id' => 'sidebar-1',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => "</aside>",
-        'before_title' => '<h1 class="widget-title">',
-        'after_title' => '</h1>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
     ) );
 
     register_sidebar( array(
@@ -113,8 +113,8 @@ function sense_widgets_init() {
         'description' => __( 'An optional second sidebar area', 'sense' ),
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => "</aside>",
-        'before_title' => '<h1 class="widget-title">',
-        'after_title' => '</h1>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
     ) );
 }
 add_action( 'init', 'sense_widgets_init' );
@@ -130,7 +130,7 @@ function sense_content_nav( $nav_id ) {
 
     ?>
     <nav id="<?php echo $nav_id; ?>">
-        <h1 class="visuallyhidden section-heading"><?php _e( 'Post navigation', 'sense' ); ?></h1>
+        <h3 class="visuallyhidden section-heading"><?php _e( 'Post navigation', 'sense' ); ?></h3>
 
     <?php if ( is_single() ) : // navigation links for single posts ?>
 
@@ -222,6 +222,8 @@ if ( ! function_exists( 'sense_posted_on' ) ) :
  * @since Sense 0.01a
  */
 function sense_posted_on() {
+    printf( __( '<time class="entry-date" datetime="%1$s" pubdate>%2$s</time>', 'sense' ), esc_attr( get_the_date( 'c' ) ), esc_attr( get_the_date() ) );
+    /*
     printf( __( '<span class="sep">Posted on </span><a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s" pubdate>%4$s</time></a><span class="byline"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%5$s" title="%6$s" rel="author">%7$s</a></span></span>', 'sense' ),
         esc_url( get_permalink() ),
         esc_attr( get_the_time() ),
@@ -231,6 +233,7 @@ function sense_posted_on() {
         esc_attr( sprintf( __( 'View all posts by %s', 'sense' ), get_the_author() ) ),
         esc_html( get_the_author() )
     );
+    */
 }
 endif;
 

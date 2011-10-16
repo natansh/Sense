@@ -1,20 +1,58 @@
 @import "wordpress_specific";
 @import "typography";
 
-header a, 
-header a:hover { 
-    text-decoration: none; 
+body {
+    line-height: 1.4em;
+    padding: 2%;
+    text-color: #444;
 }
 
-p {
-  margin-top: 10px;
-  margin-bottom: 10px;
+#page {
+    margin: auto;
 }
 
-time { font-size: 12px; font-weight: 700; text-transform: uppercase; color: #CECECE; }
+article { 
+    margin: 1em 0em 1em 0em; 
+}
 
-article { margin: 15px 10px 15px 40px; padding-left: 10px; max-width: 550px; }
+header#branding {
+    margin-top: 3em;    
+}
 
-.banner { margin-left: 40px; padding-left: 10px; }
+nav#access {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    border-bottom: 1px solid #AAAAAA;
+    background: #F8F8F8;
 
-div#main { max-width: 610px; }
+    ul {
+        text-align:center;
+        li {
+            display: inline;
+            margin: 1em 3% 1em 3%;
+            @include title_font;
+        }
+    }
+}
+
+cite {
+    text-align: right;
+    width: 100%;
+}
+
+#nav-below {
+    .nav-previous {
+        float: left;
+        width: 50%;
+    }
+
+    .nav-next {
+        text-align: right;
+    }
+}
+
+::-moz-selection { background: #26c41a; color: #fff; text-shadow: none; }
+::selection { background: #26c41a; color: #fff; text-shadow: none; }

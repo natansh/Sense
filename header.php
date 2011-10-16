@@ -77,7 +77,7 @@
     <!-- All JavaScript at the bottom, except for Modernizr / Respond.
         Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
         For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+    <script src="<?php bloginfo('template_url') ?>/js/libs/modernizr-2.0.6.min.js"></script>
 
     <!-- Including typekit before, so as to try and prevent a flash of alt fonts. This might or might not work. -->
     <script type="text/javascript" src="http://use.typekit.com/hcb5ekl.js"></script>
@@ -97,7 +97,7 @@
         </div>
 
         <nav id="access" role="navigation">
-            <h1 class="section-heading visuallyhidden"><?php _e( 'Main menu', 'sense' ); ?></h1>
+            <h2 class="section-heading visuallyhidden"><?php _e( 'Main menu', 'sense' ); ?></h2>
             <div class="visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sense' ); ?>"><?php _e( 'Skip to content', 'sense' ); ?></a></div>
 
             <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
@@ -105,3 +105,4 @@
     </header><!-- #branding -->
 
     <div id="main">
+    <hr/>

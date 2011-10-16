@@ -1,12 +1,13 @@
 @mixin text_font {
     font-family: museo-sans, Helmet, Freesans, sans-serif; 
     font-weight: 300;
-    font-size: 1em;
+    font-size: 0.875em;
 }
 
 @mixin title_font {
     font-family: anivers-sc, Helmet, Freesans, sans-serif;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 body {
@@ -18,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { 
-    font-size: 2.5em; 
+    font-size: 2.2em; 
 }
 
 h2 { 
@@ -31,4 +32,42 @@ h3 {
 
 h4 { 
     font-size: 1.2em;
+}
+
+a {
+    color: #4D74F3;
+    text-decoration: none;
+    &:active, &:visited {
+        color: #4D74F3;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+header a:hover { 
+    text-decoration: none; 
+}
+
+p {
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
+}
+
+
+#banner a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+time { 
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #CDCDCD;
+}
+
+hr {
+    border-top: 1px solid #EEE;
 }
