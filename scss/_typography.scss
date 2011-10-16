@@ -54,9 +54,13 @@ p {
     margin-bottom: 0.6em;
 }
 
-
-#banner a {
+#site-title a {
+    color: #646464;
+    &:active, &:visited {
+        text-color: #555;
+    }
     &:hover {
+        color: #333;
         text-decoration: none;
     }
 }
