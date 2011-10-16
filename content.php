@@ -54,8 +54,8 @@
         <?php endif; // End if 'post' == get_post_type() ?>
 
         <?php if ( comments_open() || ( '0' != get_comments_number() && ! comments_open() ) ) : ?>
-        <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'sense' ), __( '1 Comment', 'sense' ), __( '% Comments', 'sense' ) ); ?></span>
-        <span class="sep"> | </span>
+        <?php /*<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment ', 'sense' ) . "&#187;", __( '1 Comment ', 'sense' ) . "&#187;", __( '% Comments ', 'sense' ) . "&#187;" ); ?> </span> */ ?>
+        <span class="comments-link"><?php sense_comments_popup_link() ?> </span>
         <?php endif; ?>
 
         <?php edit_post_link( __( 'Edit', 'sense' ), '<span class="edit-link">', '</span>' ); ?>

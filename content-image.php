@@ -23,8 +23,7 @@
 
     <footer class="entry-meta">
         <?php if ( comments_open() || ( '0' != get_comments_number() && ! comments_open() ) ) : ?>
-        <span class="sep"> | </span>
-        <span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'sense' ), __( '1 Comment', 'sense' ), __( '% Comments', 'sense' ) ); ?></span>
+        <span class="comments-link"><?php sense_comments_popup_link() ?> </span>
         <?php endif; ?>
         <?php edit_post_link( __( 'Edit', 'sense' ), '<span class="sep"> | </span><span class="edit-link">', '</span>' ); ?>
     </footer><!-- #entry-meta -->

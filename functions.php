@@ -237,6 +237,17 @@ function sense_posted_on() {
 }
 endif;
 
+if ( ! function_exists( 'sense_comments_popup_link' ) ) :
+/**
+ * Gives the comment link. 
+ *
+ * @since Sense 0.01a
+ */
+function sense_comments_popup_link() {
+    comments_popup_link( __( 'Leave a comment ', 'sense' ) . "&#187;", __( '1 Comment ', 'sense' ) . "&#187;", __( '% Comments ', 'sense' ) . "&#187;" );
+}
+endif;
+
 /**
  * Adds custom classes to the array of body classes.
  *
