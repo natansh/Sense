@@ -54,5 +54,9 @@ cite {
     }
 }
 
+.entry-content {
+    overflow: hidden;
+}
+
 ::-moz-selection { background: #26c41a; color: #fff; text-shadow: none; }
 ::selection { background: #26c41a; color: #fff; text-shadow: none; }
