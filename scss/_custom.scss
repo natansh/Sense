@@ -38,11 +38,6 @@ nav#access {
     }
 }
 
-cite {
-    text-align: right;
-    width: 100%;
-}
-
 #nav-below {
     .nav-previous {
         float: left;
@@ -54,6 +49,9 @@ cite {
     }
 }
 
+/* Added this to prevent images from going out of the paragraph. 
+ * http://css-tricks.com/795-all-about-floats/
+ */
 .entry-content {
     overflow: hidden;
 }
