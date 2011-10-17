@@ -3,7 +3,6 @@
 
 body {
     line-height: 1.4em;
-    padding: 2%;
     text-color: #444;
 }
 
@@ -17,6 +16,38 @@ article {
 
 header#branding {
     margin-top: 3em;    
+    padding: 0 2% 0 2%;
+}
+
+#primary, #secondary, #tertiary {
+    padding-left: 2%;
+    padding-right: 2%;
+    border-bottom: 1px solid #AAA;
+}
+
+#secondary, #tertiary {
+    padding-bottom: 1em;
+    background: #F9F9F9;
+    border-top: 1px solid #FFF;
+    h2 {
+        @include text_font;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        font-weight: 700;
+        color: #666;
+        text-shadow: 1px 1px 1px #FFF;
+        font-size: 1.1em;
+    }
+}
+
+.widget {
+    
+    padding-top: 1em;
+}
+
+footer#colophon {
+    padding: 1em 2% 1em 2%;
+    background: #FCFCFC;
 }
 
 nav#access {
@@ -38,7 +69,7 @@ nav#access {
     }
 }
 
-#nav-below {
+div#nav-below {
     .nav-previous {
         float: left;
         width: 50%;
@@ -61,8 +92,27 @@ cite {
     overflow: hidden;
 }
 
+/* Selection color is green */
 ::-moz-selection { background: #26c41a; color: #fff; text-shadow: none; }
 ::selection { background: #26c41a; color: #fff; text-shadow: none; }
+
+/* Styling the search box */
+form#searchform {
+    position: relative;
+    width: 100%;
+    div {
+        padding-right: 7em;
+    }
+    input[type="text"] {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: 6em;
+        position: absolute;
+        right: 0em;
+        top: 0em;
+    }
+}
 
 input[type="text"] {
     border: 1px solid #DDD;
@@ -79,12 +129,15 @@ input[type="text"] {
 input[type="submit"] {
     @include text_font;
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px #FFF;
     font-weight: 700;
     font-size: 1em;
-    color: #777;
+    color: #666;
     border: 1px solid #CCC;
-    background: #EEE;
+    background: #EAEAEA;
     border-radius: 2px;
     padding: 2px 7px 2px 7px;
     line-height: 1.5em;
 }
+
+

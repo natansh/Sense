@@ -20,7 +20,7 @@
 						<?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
 					</ul>
 				</aside>
-
+                <?php /*
 				<aside id="meta" class="widget">
 					<h2 class="widget-title"><?php _e( 'Meta', 'sense' ); ?></h2>
 					<ul>
@@ -28,7 +28,8 @@
 						<aside><?php wp_loginout(); ?></aside>
 						<?php wp_meta(); ?>
 					</ul>
-				</aside>
+                </aside>
+                 */ ?>
 
 			<?php endif; // end sidebar widget area ?>
 		</div><!-- #secondary .widget-area -->

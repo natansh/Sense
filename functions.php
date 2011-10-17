@@ -146,6 +146,7 @@ function sense_content_nav( $nav_id ) {
         <?php if ( get_previous_posts_link() ) : ?>
         <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'sense' ) ); ?></div>
         <?php endif; ?>
+        <br class="clearfix" />
 
     <?php endif; ?>
 
