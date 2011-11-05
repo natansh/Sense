@@ -96,13 +96,12 @@
             <p><?php bloginfo( 'description' ); ?></p>
         </div>
 
-        <nav id="access" role="navigation">
-            <h2 class="section-heading visuallyhidden"><?php _e( 'Main menu', 'sense' ); ?></h2>
-            <div class="visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sense' ); ?>"><?php _e( 'Skip to content', 'sense' ); ?></a></div>
-
-            <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-        </nav><!-- #access -->
     </header><!-- #branding -->
+    <nav id="access" role="navigation">
+        <h2 class="section-heading visuallyhidden"><?php _e( 'Main menu', 'sense' ); ?></h2>
+        <div class="visuallyhidden"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'sense' ); ?>"><?php _e( 'Skip to content', 'sense' ); ?></a></div>
+
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+    </nav><!-- #access -->
 
     <div id="main">
-    <hr/>

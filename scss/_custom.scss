@@ -58,13 +58,19 @@ nav#access {
     width: 100%;
     border-bottom: 1px solid #AAAAAA;
     background: #F8F8F8;
+    padding: 0.2em 0 0.2em 0;
 
     ul {
         text-align:center;
         li {
             display: inline;
-            margin: 1em 3% 1em 3%;
+            padding: 0 3% 0 3%;
             @include title_font;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -78,6 +84,12 @@ div#nav-below {
     .nav-next {
         text-align: right;
     }
+}
+
+div#main {
+    border-top: 1px solid #CCC;
+    margin-top: 1em;
+    padding-top: 1em;
 }
 
 cite {
