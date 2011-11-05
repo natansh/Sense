@@ -1,0 +1,51 @@
+/* ==|== media queries ======================================================
+   PLACEHOLDER Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    /* Style adjustments for viewports 480px and over go here */
+    header#branding {
+        padding-bottom: 1em;
+    }
+
+    nav#access {
+        border-bottom: none;
+        width: 96%;
+        padding: 0em 2% 0em 2%;
+        position: relative;
+        background: #FFF;
+        display: block;
+        float: left;
+        clear: both;
+
+        ul {
+            text-align: left;
+            li {
+                float: left;
+                padding: 0.4em 0em;
+                a {
+                    padding: 0em 2em;
+                    display: inline;
+                }
+                &:before {
+                    content: "/";
+                    color: #AAA;
+                }
+            }
+        }
+    }
+
+    div#main {
+        clear: both;
+        margin-top: 0em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports 768px and over go here */
+
+}
+
+
