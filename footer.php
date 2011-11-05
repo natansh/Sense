@@ -9,6 +9,7 @@
  * @since Sense 0.01a
  */
 ?>
+    <div class="clearfix"></div>
     </div><!-- #main -->
 
     <footer id="colophon" role="contentinfo">
@@ -16,7 +17,7 @@
             <?php do_action( 'sense_credits' ); ?>
             <?php printf( __( 'Proudly powered by', 'sense' )); ?><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sense' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'sense' ); ?>" rel="generator">&nbsp;Wordpress.</a>
             <br />
-            <?php printf( __( 'Uses the theme %1$s by %2$s.', 'sense' ), '<a href="www.ionsofimagination.com/sense">Sense</a>', '<a href="www.ionsofimagination.com" rel="designer">Ions of Imagination</a>' ); ?>
+            <?php printf( __( 'Uses the theme %1$s by %2$s.', 'sense' ), '<a href="http://www.ionsofimagination.com/sense">Sense</a>', '<a href="http://www.ionsofimagination.com/" rel="designer">Ions of Imagination</a>' ); ?>
         </div>
     </footer><!-- #colophon -->
 </div><!-- #page -->
