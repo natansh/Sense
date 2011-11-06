@@ -190,4 +190,22 @@ input[type="submit"] {
     line-height: 1.5em;
 }
 
+img,
+embed,
+object,
+video{
+    max-width: 100%;
+}
 
+* html img.full {
+    width: 100%;
+}
+* html embed.full {
+    width: 100%;
+}
+* html object.full {
+    width: 100%;
+}
+* html video.full {
+    width: 100%;
+}
