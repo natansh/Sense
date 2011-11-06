@@ -57,6 +57,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+    <!-- =| Sense |= 
+        I am ignoring the above advice and putting the favicon in the theme directory. That makes more sense to me. -->
+    <link rel="shortcut icon" href="<?php bloginfo('template_url') ?>/favicon.ico" type="image/x-icon" /> 
 
     <!-- =| Sense |= TODO
         Is there a need for XFN stuff? I saw somewhere that it isn't needed in HTML5 themes. -->
