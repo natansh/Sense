@@ -14,7 +14,7 @@
     <?php sense_post_format(substr(get_post_format(), 0, 2), get_post_format()); ?>
     <header class="entry-header">
         <?php sense_posted_on(); ?>
-        <h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'sense' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+        <h2 class="entry-title visuallyhidden"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'sense' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
     </header><!-- .entry-header -->
 
     <?php if ( is_search() ) : // Only display Excerpts for search pages ?>
