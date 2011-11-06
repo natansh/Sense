@@ -15,9 +15,8 @@
     <footer id="colophon" role="contentinfo">
         <div id="site-generator">
             <?php do_action( 'sense_credits' ); ?>
-            <?php printf( __( 'Proudly powered by', 'sense' )); ?><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sense' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'sense' ); ?>" rel="generator">&nbsp;Wordpress.</a>
-            <br />
-            <?php printf( __( 'Uses the theme %1$s by %2$s.', 'sense' ), '<a href="http://www.ionsofimagination.com/sense">Sense</a>', '<a href="http://www.ionsofimagination.com/" rel="designer">Ions of Imagination</a>' ); ?>
+            <span class="powered-by"><?php printf( __( 'Proudly powered by', 'sense' )); ?><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sense' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'sense' ); ?>" rel="generator">&nbsp;Wordpress.</a></span>
+            <span class="theme-by"><?php printf( __( 'Uses the theme %1$s by %2$s.', 'sense' ), '<a href="http://www.ionsofimagination.com/sense">Sense</a>', '<a href="http://www.ionsofimagination.com/" rel="designer">Ions of Imagination</a>' ); ?></span>
         </div>
     </footer><!-- #colophon -->
 </div><!-- #page -->

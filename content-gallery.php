@@ -11,6 +11,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php sense_post_format(substr(get_post_format(), 0, 2), get_post_format()); ?>
     <header class="entry-header">
         <div class="entry-meta">
             <?php sense_posted_on(); ?>

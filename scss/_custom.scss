@@ -12,6 +12,10 @@ body {
 
 article { 
     margin: 1em 0em 1em 0em; 
+    max-width: 600px;
+    &:first-child {
+        margin-top: 0em;
+    }
 }
 
 header#branding {
@@ -27,7 +31,7 @@ header#branding {
 
 #secondary, #tertiary {
     padding-bottom: 1em;
-    background: #F9F9F9;
+    background: #F8F8F8;
     border-top: 1px solid #FFF;
     h2 {
         @include text_font;
@@ -40,6 +44,35 @@ header#branding {
     }
 }
 
+.entry-post-format {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    float: right;
+    width: 3.5em;
+    padding: 5px;
+    background: #F8F8F8;
+}
+
+.entry-post-format-short {
+    @include title_font;
+    color: #666;
+    display: block;
+    font-size: 2em;
+    margin: 0.2em auto;
+    text-align: center;
+    text-shadow: 1px 1px #FFF;
+    text-transform: capitalize;
+}
+
+.entry-post-format-full {
+    color: #666;
+    font-size: 0.7em;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 .widget {
     
     padding-top: 1em;
@@ -48,6 +81,10 @@ header#branding {
 footer#colophon {
     padding: 1em 2% 1em 2%;
     background: #FCFCFC;
+}
+
+.powered-by {
+    display: block;
 }
 
 nav#access {

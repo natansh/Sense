@@ -238,6 +238,21 @@ function sense_posted_on() {
 }
 endif;
 
+if ( ! function_exists( 'sense_post_format' ) ) :
+/**
+ * Prints HTML containing the post format symbol and small subtext stating the format.
+ *
+ * @since Sense 0.01a
+ */
+function sense_post_format($short, $format) {
+    printf( __( '
+        <div class="entry-post-format">
+            <div class="entry-post-format-short"> %1$s </div> 
+            <div class="entry-post-format-full"> %2$s </div>
+        </div>'), $short, $format);
+}
+endif;
+
 if ( ! function_exists( 'sense_comments_popup_link' ) ) :
 /**
  * Gives the comment link. 

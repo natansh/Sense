@@ -7,6 +7,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <?php 
+    if( false == get_post_format() ) :
+        sense_post_format("Po", "Post");
+    else :
+        sense_post_format(substr(get_post_format(), 0, 2), get_post_format()); 
+    endif; ?>
     <header class="entry-header">
         <div class="entry-meta">
             <?php sense_posted_on(); ?>

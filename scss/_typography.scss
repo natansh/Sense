@@ -76,3 +76,18 @@ time {
 hr {
     border-top: 1px solid #EEE;
 }
+
+blockquote {
+    border-left: 4px solid #33CC33;
+    margin-left: 0px;
+    padding-left: 10px;
+    font-size: 0.9em; 
+    cite {
+        display: block;
+        text-align: right;
+        &:before {
+            content: "- ";
+        }
+        color: #666;
+    }
+}
