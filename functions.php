@@ -67,7 +67,7 @@ function sense_setup() {
     /**
      * Add support for the Aside and Gallery Post Formats
      */
-    add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery' ) );
+    add_theme_support( 'post-formats', array( 'aside', 'image', 'gallery', 'link', 'status', 'quote' ) );
 }
 endif; // sense_setup
 
